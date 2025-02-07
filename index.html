@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HelloWorld Code Viewer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style/styles.css"/>
+  <script type="text/javascript" src="code/script.js" defer></script>
+</head>
+<body>
+  <div id="controls">
+    <p class="error"></p>
+    <label for="project-name">Project to Load: </label><input id="project-name" type="text"/>
+    <button id="load-project">LOAD</button>
+    <label for="sequence-select">Sequence to Run: </label><select id="sequence-select"></select>
+    <button id="run-sequence">RUN</button>
+    <button id="close-project">LOAD NEW PROJECT</button>
+  </div>
+  <div id="lockout"></div>
+
+  <div class="info">
+    <div id="code"></div>
+    <div id="show-key"></div>
+    <div id="demo-key"></div>
+  </div>
+
+  <div id="emu-keyboard" class="keyboard"></div>
+
+  <div id="use-keyboard" class="keyboard"></div>
+
+  <div id="map-keyboard" class="keyboard mapped"></div>
+
+  <div id="keymap"><div class="rowbar"></div><div class="colbar"></div></div>
+
+  <div id="flags">
+    <p># Shiftflag can have these values, flags can be ORed to combine them:</p>
+    <p class="v0"># 0x0000      0  key is not shifted for this keysym/scancode</p>
+    <p class="v1"># 0x0001      1  key is combined with shift for this keysym/scancode</p>
+    <p class="v2"># 0x0002      2  key is left shift on emulated machine</p>
+    <p class="v4"># 0x0004      4  key is right shift on emulated machine (use only this one
+#                for emulated keyboards that have only one shift key)</p>
+    <p class="v8"># 0x0008      8  key can be shifted or not with this keysym/scancode</p>
+    <p class="v16"># 0x0010     16  deshift key for this keysym/scancode</p>
+    <p class="v32"># 0x0020     32  another definition for this keysym/scancode follows</p>
+    <p class="v64"># 0x0040     64  key is shift-lock on emulated machine</p>
+    <p class="v128"># 0x0080    128  shift modifier required on host</p>
+    <p class="v256"># 0x0100    256  key is used for an alternative keyboard mapping, e.g. C64 mode in x128</p>
+    <p class="v512"># 0x0200    512  alt-r (alt-gr) modifier required on host</p>
+    <p class="v1024"># 0x0400   1024  ctrl modifier required on host</p>
+    <p class="v2048"># 0x0800   2048  key is combined with cbm for this keysym/scancode</p>
+    <p class="v4096"># 0x1000   4096  key is combined with ctrl for this keysym/scancode</p>
+    <p class="v8192"># 0x2000   8192  key is (left) cbm on emulated machine</p>
+    <p class="v16384"># 0x4000  16384  key is (left) ctrl on emulated machine</p>
+    <p class="total"></p>
+  </div>
+
+  <div id="running-code"></div>
+</body>
+</html>

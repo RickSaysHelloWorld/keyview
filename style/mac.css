@@ -1,0 +1,66 @@
+/* MacBook Specific */
+
+.keyboard.mac {
+  background: #202020;
+  padding-left: 4.5%;
+}
+.mac key {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont;
+  border-radius: 5px;
+  width: 6.4%;
+  font-size: 12pt;
+}
+.mac key.wide {
+  font-size: 10pt;
+  text-align: left;
+  align-content: end;
+}
+.mac key.wide.p110 {
+  width: 7.3%;
+  aspect-ratio: 1.14;
+}
+.mac key.wide.p125 {
+  width: 8%;
+  aspect-ratio: 1.25;
+}
+.mac key.wide.p175 {
+  width: 10.5%;
+  aspect-ratio: 1.64;
+}
+.mac key.wide.p225 {
+  width: 13.8%;
+  aspect-ratio: 2.15;
+}
+.mac key.space {
+  width: 32.6%;
+  aspect-ratio: 5.1;
+}
+
+.mac key.ra { text-align: right; }
+.mac key.ca { text-align: center; }
+.mac key.fn {
+  font-size: 8pt;
+  vertical-align: bottom;
+  align-content: end;
+}
+.mac key.k-fn {
+  align-content: start;
+  text-align: right;
+}
+
+.mac key.arrow {
+  border: solid 1px black;
+  border-radius: 0;
+  font-size: 10pt;
+  line-height: 20pt;
+  align-content: center;
+  background: #202020;
+}
+.mac key.arrow i,.mac key.arrow b {
+  border: solid 1px lightgray;
+  border-radius: 5px;
+  height: 48%;
+  background: black;
+}
+.mac key.arrow i { top: -1px; }
+.mac key.arrow b { bottom: -1px; }

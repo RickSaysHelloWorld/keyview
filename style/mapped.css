@@ -1,0 +1,223 @@
+:root {
+  --mapped-key-color: gray;
+  --mapped-key-assigned-color: white;
+  --key-shifted-color: darkgoldenrod;
+  --key-light-shifted-color: goldenrod;
+  --key-fn-color: #00d3d3;
+  --key-control-color: lightblue;
+  --key-alt-color: mediumvioletred;
+  --key-shift-alt-color: violet;
+
+  /* copied from c64.css */
+  --c64-key-color: #382a16;
+  --c64-fn-key-color: #857568;
+  --c64-cbm-char-border: lightgray;
+  --c64-key-control-color: #366de2;
+  --c64-key-cbm-color: #1dcb1d;
+
+  /* copied from vic20.css */
+  --vic20-key-color: #47362e;
+  --vic20-fn-key-color: #bf8f58;
+}
+
+.keyboard.mapped {
+  width: 90vw;
+  padding-left: 6.5%;
+}
+.keyboard.mapped key {
+  color: var(--mapped-key-color);
+}
+.keyboard.mapped key.s2 {
+  color: var(--mapped-key-assigned-color);
+  align-content: start;
+  line-height: 300%;
+}
+.keyboard.mapped key.s3 i {
+  top: 5%;
+  height: 30%;
+  color: var(--key-shifted-color);
+  text-align: center;
+  font-size: 12pt;
+}
+.keyboard.mapped key.s3 b, .keyboard.mapped key.s2 b {
+  text-align: center;
+  color: var(--mapped-key-assigned-color);
+  font-size: 12pt;
+}
+.keyboard.mapped key.s3 b {
+  bottom: unset;
+  top: 35%;
+  height: 30%;
+}
+.keyboard.mapped key.s3.s3m b, .keyboard.mapped key.s2 b {
+  top: 5%;
+  height: 60%;
+  line-height: 300%;
+}
+.keyboard.mapped key.s3 em, .keyboard.mapped key.s2 em {
+  position: absolute;
+  bottom: 5%;
+  height: 40%;
+  font-size: 8pt;
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-style: normal;
+  align-content: end;
+  line-height: 100%;
+}
+.keyboard.mapped key em cbm {
+  display: inline-block;
+  padding: 0;
+  margin: 0 5%;
+  line-height: 90%;
+}
+.keyboard.mapped key em cbm:first-child {
+  margin-right: 15%;
+}
+.keyboard.mapped key em cbm:only-child {
+  margin-right: 10%;
+}
+
+.keyboard.mapped key.fn {
+  align-content: end;
+  line-height: 100%;
+  font-size: 10pt;
+}
+.keyboard.mapped key.fn.sfn { color: gray; }
+.keyboard.mapped key.sfn b {
+  color: var(--key-fn-color);
+  font-size: 12pt;
+}
+.keyboard.mapped key.sfn i { color: var(--key-light-shifted-color); }
+.keyboard.mapped key.sfn i sfn { color: var(--key-fn-color); }
+.keyboard.mapped key shft { color: var(--key-shifted-color); }
+.keyboard.mapped key .rtarr { font-size: 12pt; }
+.keyboard.mapped .k-shift { color: var(--key-shifted-color); }
+.keyboard.mapped key.ctrl { color: var(--key-control-color); }
+.keyboard.mapped key.option { color: var(--key-alt-color); }
+.keyboard.mapped key.k-fn {
+  color: var(--key-fn-color);
+  align-content: start;
+  font-size: 10pt;
+}
+.keyboard.mapped key.arrow {
+  background: black !important;
+  color: white;
+  line-height: 250%;
+}
+.keyboard.mapped key.mac {
+  background: black !important;
+}
+.keyboard.mapped key em ctrl { font-size: 7pt; color: var(--key-control-color); display: block; margin-bottom: 2px; }
+.keyboard.mapped key em cc { font-size: 7pt; color: var(--key-alt-color); display: block; }
+.keyboard.mapped key.alt { color: var(--key-alt-color); }
+.keyboard.mapped key alt { color: var(--key-alt-color); }
+.keyboard.mapped key em ctrl alt { color: var(--key-alt-color); }
+.keyboard.mapped key salt { color: var(--key-shift-alt-color); }
+
+.keyboard.mapped key .sm { font-size: 9pt !important; }
+
+/* mapping adjustments per emulator platform */
+/* c64 - and similar */
+.c64 .keyboard.mapped key.ctrl { color: var(--c64-key-control-color); }
+.c64 .keyboard.mapped key em ctrl { color: var(--c64-key-control-color); }
+.c64 .keyboard.mapped key.cbm { color: var(--c64-key-cbm-color); }
+.c64 .keyboard.mapped key em cc { font-size: 7pt; color: var(--c64-key-cbm-color); display: block; }
+
+.c64 .keyboard.mapped key salt {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  line-height: 100%;
+  border-left: solid 1px gray;
+  border-bottom: solid 1px gray;
+  min-width: 11pt;
+}
+.c64 .keyboard.mapped key.k-option salt { position: revert; display: inline; border: none; }
+.c64 .keyboard.mapped key, .c64 .keyboard.mapped key.arrow i, .c64 .keyboard.mapped key.arrow b {
+  background: var(--c64-key-color);
+}
+.c64 .keyboard.mapped key i, .c64 .keyboard.mapped key b {
+  font-family: "Play", sans-serif;
+}
+.c64 .keyboard.mapped key.cfn {
+  background: var(--c64-fn-key-color);
+  color: darkgray;
+}
+.c64 .keyboard.mapped key.s3 em cbm, .c64 .keyboard.mapped key.s2 em cbm {
+  font-family: cbm64, monospace;
+  border: solid 1px lightgray;
+  font-size: 10pt;
+  line-height: 100%;
+}
+.c64 .keyboard.mapped em cbm {
+  color: var(--key-shifted-color); ;
+}
+.c64 .keyboard.mapped em cbm:first-child {
+  color: var(--c64-key-cbm-color);
+}
+.c64 .keyboard.mapped key.k-backslash cbm, .c64 .keyboard.mapped key.k-minus cbm {
+  font-family: cbm64, monospace;
+  border: solid 1px var(--c64-cbm-char-border);
+}
+.c64 .keyboard.mapped key em cbm.nm {
+  font-family: "Play", sans-serif;
+  font-size: 12pt;
+  border: none;
+}
+.c64 .keyboard.mapped key.cbm b {
+  background: no-repeat center/50% url("/assets/cbm-logo.png") #382a16;
+}
+.c64 .keyboard.mapped key.cbm.cbm-sm b {
+  background: no-repeat center/30% url("/assets/cbm-logo.png");
+  font-size: 6pt;
+  height: 80%;
+  color: gray;
+}
+.c64 .keyboard.mapped key.cbm.cbm-sm { color: gray; }
+.c64 .keyboard.mapped key.k-return i { font-size: 8pt;}
+.c64 .keyboard.mapped key.k-control i.cbm-sh {
+  background: no-repeat center/20% url("/assets/cbm-logo-cbm.png") var(--key-shifted-color);
+  top: 0;
+  border-radius: 5px 5px 0 0;
+}
+.c64 .keyboard.mapped key.k-control b { top: 15%; }
+.c64 .keyboard.mapped key.k-backslash ctrl { display: inline-block; }
+.c64 .keyboard.mapped key i.lt { text-align: left; }
+.c64 .keyboard.mapped key.k-return salt { color: var(--key-fn-color); }
+.c64 .keyboard.mapped key.k-f7 ctrl { color: rgb(from var(--c64-key-control-color) calc(r * 0.5) calc(g * 0.5) calc(b * 0.5)); }
+
+.c64 .keyboard.mapped .overlay.o-t3 { height: 30%; }
+.c64 .keyboard.mapped .overlay.o-m3 { top: 23%; height: 30%; }
+.c64 .keyboard.mapped .overlay.o-tm3 { height: 65%; }
+.c64 .keyboard.mapped .overlay.o-bm3 { top: unset; bottom: -5px; height: 65%; }
+.c64 .keyboard.mapped .overlay.o-b3 { top: unset; bottom: -5px; height: 35%; }
+
+#demo-key.c64 {
+  background: var(--c64-key-color);
+  font-family: "Play", sans-serif;
+  line-height: 50%;
+}
+#demo-key.c64 em {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+}
+#demo-key.c64 em cbm {
+  margin: 0 3px;
+  font-style: normal;
+  font-family: cbm64, monospace;
+  border: solid 1px var(--c64-cbm-char-border);
+  font-size: 9pt;
+  line-height: 100%;
+}
+
+/* vic20 */
+.c64.vic20 .keyboard.mapped key, .c64.vic20 .keyboard.mapped key.arrow i, .c64.vic20 .keyboard.mapped key.arrow b {
+  background: var(--vic20-key-color);
+}
+.c64.vic20 .keyboard.mapped key.cfn {
+  background: var(--vic20-fn-key-color);
+}

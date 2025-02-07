@@ -1,0 +1,54 @@
+@font-face { font-family: cbmVIC;    src: url(../fonts/PetMe2X.ttf); }
+
+:root {
+  --vic20-case-color: #fffadd;
+  --vic20-key-color: #47362e;
+  --vic20-fn-key-color: #bf8f58;
+
+  --vic20-black: black;
+  --vic20-white: white;
+  --vic20-red: #dc4900;
+  --vic20-cyan: #7effff;
+  --vic20-purple: #fb4ff9;
+  --vic20-green: #67ff96;
+  --vic20-blue: #7d3eff;
+  --vic20-yellow: #FFFF3b;
+}
+
+.keyboard.c64.vic20 {
+  background: var(--vic20-case-color);
+}
+.keyboard.c64.vic20 key {
+  background: var(--vic20-key-color);
+}
+.keyboard.c64.vic20 key em {
+  background: rgb(from var(--vic20-key-color) calc(r * 0.5) calc(g * 0.5) calc(b * 0.5));
+}
+.keyboard.c64.vic20 key em cbm {
+  font-family: cbmPET-40, monospace;
+}
+
+.keyboard.c64.vic20 key.fn {
+  background: var(--vic20-fn-key-color);
+}
+.keyboard.c64.vic20 key.fn em {
+  background: rgb(from var(--vic20-fn-key-color) calc(r * 0.75) calc(g * 0.75) calc(b * 0.75));
+}
+
+.c64.vic20 #show-key {
+  background: var(--vic20-white);
+  color: var(--vic20-blue);
+  font-family: cbmVIC, monospace;
+  border: solid 8px var(--vic20-cyan);
+  transform: scale(0.75,1);
+  width: 80px;
+}
+.c64.vic20 #show-key.s-black { color: var(--vic20-black); }
+.c64.vic20 #show-key.s-white { color: var(--vic20-white); }
+.c64.vic20 #show-key.s-red { color: var(--vic20-red); }
+.c64.vic20 #show-key.s-cyan { color: var(--vic20-cyan); }
+.c64.vic20 #show-key.s-purple { color: var(--vic20-purple); }
+.c64.vic20 #show-key.s-green { color: var(--vic20-green); }
+.c64.vic20 #show-key.s-blue { color: var(--vic20-blue); }
+.c64.vic20 #show-key.s-yellow { color: var(--vic20-yellow); }
+.c64.vic20 #show-key.s-rev { background: var(--vic20-blue); color: var(--vic20-white); }

@@ -1,0 +1,217 @@
+:root {
+  --cbm2-case-color: #bcbbb9;
+  --cbm2-key-color: #989991;
+  --cbm2-key-border: black;
+  --cbm2-key-text: black;
+  --cbm2-key-alt-text: white;
+  --cbm2-fn-key-color: #76726b;
+
+  --cbm2-back: black;
+  --cbm2-fore: #18e500;
+}
+
+.cbm2 #show-key {
+  background: var(--cbm2-back);
+  color: var(--cbm2-fore);
+  font-family: cbm128, monospace;
+  border: solid 8px var(--cbm2-back);
+  transform: scale(1,1.1);
+}
+.cbm2 #show-key.s-rev { background: var(--cbm2-fore); color: var(--cbm2-back); }
+
+.keyboard.cbm2 {
+  background: var(--cbm2-case-color);
+  padding-left: 6%;
+  width: 78vw;
+  font-family: "Funnel Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.keyboard.cbm2 key {
+  background: var(--cbm2-key-color);
+  border-color: var(--cbm2-key-border);
+  color: var(--cbm2-key-text);
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 5px;
+  width: 4.55%;
+  font-size: 12pt;
+  align-content: center;
+}
+.keyboard.cbm2 key em, .keyboard.cbm2 key b, .keyboard.cbm2 key i {
+  position: absolute;
+  display: block;
+  left: 0;
+  font-size: 8pt;
+  line-height: 100%;
+  height: 40%;
+  padding: 0; margin: 0;
+  align-content: center;
+}
+.keyboard.cbm2 key i {
+  top: 10%;
+}
+.keyboard.cbm2 key b {
+  bottom: 18%;
+}
+.keyboard.cbm2 key em {
+  font-style: normal;
+  font-weight: normal;
+  height: 40%;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  background-color: rgb(from var(--cbm2-key-color) calc(r * 0.75) calc(g * 0.75) calc(b * 0.75));
+  font-size: 6pt;
+  line-height: 90%;
+  color: var(--cbm2-key-alt-text)
+}
+.keyboard.cbm2 key em cbm {
+  display: inline-block;
+  font-family: cbmPET-40, monospace;
+  font-size: 7pt;
+  border: solid 1px var(--cbm2-key-alt-text);
+  padding: 0;
+  margin: 0 5%;
+  line-height: 90%;
+}
+.keyboard.cbm2 key em.blank { color: var(--cbm2-key-color); }
+.keyboard.cbm2 key:has(em) {
+  align-content: start;
+  line-height: 140%;
+}
+.keyboard.cbm2 key:has(em) i {
+  height: 30%;
+  top: 2%;
+}
+.keyboard.cbm2 key:has(em) b {
+  height: 30%;
+  bottom: unset;
+  top: 30%;
+}
+
+.keyboard.cbm2 key.dk {
+  background: var(--cbm2-fn-key-color);
+  font-size: 9pt;
+}
+.keyboard.cbm2 key.fn {
+  margin-bottom: 2%;
+}
+
+.keyboard.cbm2 key.z-fn {
+  font-size: 10pt;
+}
+
+.keyboard.cbm2 key.gap75 {
+  margin-right: 3%;
+}
+.keyboard.cbm2 key.gap100 {
+  margin-right: 4.6%;
+}
+
+.keyboard.cbm2 key.tall {
+  margin-top: -3.7vw;
+  vertical-align: top;
+  height: 7.3vw;
+  font-size: 8pt;
+}
+.keyboard.cbm2 key.blank { opacity: 0; }
+.keyboard.cbm2 key.k-return {
+  border-top-left-radius: 0;
+}
+.keyboard.cbm2 key.k-return::before {
+  content: "RETURN";
+  position: absolute;
+  top: -1px;
+  left: -0.9vw;
+  text-indent: 0.4vw;
+  line-height: 370%;
+  border-radius: 5px 0 0 5px;
+  border: solid 1px var(--cbm2-key-border);
+  border-right: none;
+  background: var(--cbm2-fn-key-color);
+  height: 49%;
+  width: 0.9vw;
+}
+
+.keyboard.cbm2 key.ind {
+  margin-left: 1.15%;
+}
+.keyboard.cbm2 key.wd125 {
+  width: 5.73%;
+  aspect-ratio: 1.26;
+}
+.keyboard.cbm2 key.wd150 {
+  width: 6.52%;
+  aspect-ratio: 1.44;
+}
+.keyboard.cbm2 key.wd200 {
+  width: 9.3%;
+  aspect-ratio: 2.05;
+}
+.keyboard.cbm2 key.k-ctrl {
+  margin-left: 8%;
+}
+.keyboard.cbm2 key.k-space {
+  width: 42%;
+  aspect-ratio: 9.3;
+  margin-right: 15.55%;
+}
+.keyboard.cbm2 key.cbm {
+  background: no-repeat center/50% url("/assets/cbm-logo-dark.png") var(--cbm2-key-color) !important;
+}
+
+.keyboard.cbm2 .overlay.o-t3 {
+  height: 30%;
+}
+.keyboard.cbm2 .overlay.o-m3 {
+  top: 23%;
+  height: 30%;
+}
+.keyboard.cbm2 .overlay.o-tm3 {
+  height: 65%;
+}
+.keyboard.cbm2 .overlay.o-bm3 {
+  top: unset;
+  bottom: -5px;
+  height: 65%;
+}
+.keyboard.cbm2 .overlay.o-b3, .keyboard.cbm2 .overlay.o-b3l, .keyboard.cbm2 .overlay.o-b3r {
+  top: unset;
+  bottom: -5px;
+  height: 35%;
+}
+.keyboard.cbm2 .overlay.o-b3l, .keyboard.cbm2 .overlay.o-b3r {
+  width: 50%;
+}
+.keyboard.cbm2 .overlay.o-b3r {
+  left: unset;
+  right: -5px;
+}
+
+#keymap .rowbar {
+  height: 5.2%;
+  top: 16.6%;
+}
+#keymap .colbar {
+  width: 8.9%;
+  left: 13.5%;
+}
+#keymap.r-0 .rowbar { top: 16.6% }
+#keymap.r-1 .rowbar { top: 26.5% }
+#keymap.r-2 .rowbar { top: 36.9% }
+#keymap.r-3 .rowbar { top: 47.0% }
+#keymap.r-4 .rowbar { top: 57.2% }
+#keymap.r-5 .rowbar { top: 67.7% }
+#keymap.r-6 .rowbar { top: 78.0% }
+#keymap.r-7 .rowbar { top: 88.2% }
+#keymap.c-0 .colbar { left: 13.5% }
+#keymap.c-1 .colbar { left: 24.2% }
+#keymap.c-2 .colbar { left: 34.9% }
+#keymap.c-3 .colbar { left: 45.6% }
+#keymap.c-4 .colbar { left: 56.3% }
+#keymap.c-5 .colbar { left: 67.0% }
+#keymap.c-6 .colbar { left: 77.7% }
+#keymap.c-7 .colbar { left: 88.4% }

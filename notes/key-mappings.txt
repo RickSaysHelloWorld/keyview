@@ -1,0 +1,355 @@
+Macbook keyboard:
+
++-------------------------------------------------------------------------------------+
+|  esc  | F1  | F2  | F3  | F4  |  F5 |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 | pwr |
++-------------------------------------------------------------------------------------+
+| ~ ` | ! 1 | @ 2 | 3 # | 4 $ | % 5 | ^ 6 | & 7 | * 8 | ( 9 | ) 0 | _ - | + = |delete |
++-------------------------------------------------------------------------------------+
+|  tab  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  | { [ | } ] | | \ |
++-------------------------------------------------------------------------------------+
+|caps lck|  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  | : ; | " ' |  return  |
++-------------------------------------------------------------------------------------+
+|  shift   |  Z  |  X  |  C  |  V  |  B  |  N  |  M  | < , | > .  | ? / |   shift     |
++-------------------------------------------------------------------------------------+
+|  fn | ctrl| opt | comd |                             | comd | opt |  ◀  | ▲/▼ |  ▶  |
++-------------------------------------------------------------------------------------+
+
+key        code              shift            option               shift-option
+---------  ----------------  ---------------  -------------------  -----------------
+esc        Escape
+fn-F1      F1
+fn-F2      F2
+fn-F3      F3
+fn-F4      F4
+fn-F5      F5
+fn-F6      F6
+fn-F7      F7
+fn-F8      F8
+fn-F9      F9
+fn-F10     F10
+fn-F11     F11
+fn-F12     F12
+pwr
+
+~ `        grave             asciitilde       dead-grave
+! 1        1                 exclam           exclamdown
+@ 2        2                 at               trademark            EuroSign
+# 3        3                 numbersign       sterling
+$ 4        4                 dollar           cent
+% 5        5                 percent          infinity
+^ 6        6                 asciicircum      section
+& 7        7                 ampersand        paragraph            doubledagger
+* 8        8                 asterisk         enfilledcircbullet   degree
+( 9        9                 parenleft        ordfeminine          periodcentered
+) 0        0                 parenright       masculine            singlelowquotemark
+_ -        minus             underscore       endash               emdash
++ =        equal             plus             notequal             plusminus
+delete     BackSpace
+fn-delete  Delete
+
+tab        Tab               ISO_Left_Tab
+Q          q                 Q                oe                   OE
+W          w                 W                                     doublelowquotemark
+E          e                 E                dead_acute           acute
+R          r                 R                registered
+T          t                 T                dagger               caron
+Y          y                 Y                yen                  Aacute
+U          u                 U                dead_diaeresis       diaeresis
+I          i                 I                dead_circumflex
+O          o                 O                ooblique             Ooblique
+P          p                 P                Greek_pi
+{ [        bracketleft       braceleft        leftdoublequotemark  rightdoublequotemark
+} ]        bracketright      braceright       leftsinglequotemark  rightsinglequotemark
+| \        backslash         bar              guillemotleft        guillemotright
+
+caps lck   Caps_Lock
+A          a                 A                aring                Aring
+S          s                 S                ssharp               Iacute
+D          d                 D                partialderivative    Icircumflex
+F          f                 F                function             ldiaeresis
+G          g                 G                copyright            doubleacute
+H          h                 H                abovedot             Oacute
+J          j                 J                                     Ocircumflex
+K          k                 K
+L          l                 L                notsign              Ograve
+: ;        semicolon         colon            ellipsis             Uacute
+" '        apostrophe        quotedbl         ae                   AE
+return     Return
+fn-return  KP_Enter
+
+shift      Shift_L
+Z          z                  Z               Greek_OMEGA          cedilla
+X          x                  X                                    ogonek
+C          c                  C               ccedilla             Ccedilla
+V          v                  V               radical
+B          b                  B               integral             idotless
+N          n                  N               dead_perispomeni
+M          m                  M               mu                   Acircunmflex
+< ,        comma              less            lessthanequal        macron
+> .        period             greater         greaterthanequal     breve
+? /        slash              question        division             questiondown
+shift      Shift_R
+
+fn
+ctrl       Control_L
+opt        Alt_L
+comd       Meta_L
+(space)    space
+comd       Meta_R
+opt        Alt_R
+◀          Left
+▲          Up
+▼          Down
+▶          Right
+fn-◀       Home
+fn-▲       Page_Up
+fn-▼       Page_Down
+fn-▶       End
+
+mappable option keys (control-alt for PC)
++-------------------------------------------------------------------------------------+
+| ~ ` | ! 1 | @ 2 | 3 # |40/80| % 5 | C-^ | & 7 | * 8 | ( 9 | ) 0 | _ - | + = |#######|
++-------------------------------------------------------------------------------------+
+|#######|  Q  |#####|  E  | Rpt |  T  |  Y  |  U  |u/lon|  O  |  P  | { [ | } ] | C-E |
++-------------------------------------------------------------------------------------+
+|########|  A  |  S  |  D  |  F  | N/G |u/lof|#####|#####|  L  | : ; | " ' |##########|
++-------------------------------------------------------------------------------------+
+|##########|NoScr|#####|  C  | Rvs |  B  |  N  | LF  | < , | > .  | ? / |#############|
++-------------------------------------------------------------------------------------+
+
+mappable shift-option keys
++-------------------------------------------------------------------------------------+
+|#####|#####| @ 2 |#####|#####|#####|#####| & 7 | kp* | ( 9 | kp= | kp- | kp+ |#######|
++-------------------------------------------------------------------------------------+
+|#######| kp7 | kp8 | kp9 |#####|  T  |  Y  |  U  |#####|  O  |#####|kpCE |kp00 | | \ |
++-------------------------------------------------------------------------------------+
+|########| kp4 | kp5 | kp6 | kp0 |  G  |Help |  J  |#####|  L  | : ; | " ' |##########|
++-------------------------------------------------------------------------------------+
+|##########| kp1 | kp2 | kp3 |#####|  B  |#####|  M  | kp? | kp.  | kp/ |#############|
++-------------------------------------------------------------------------------------+
+
+Mac keyboard:
+
++-------------------------------------------------------------------------------------+  +-----------------+  +-----------------------+
+|  esc  | F1  | F2  | F3  | F4  |  F5 |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 | pwr |  | F13 | F14 | F15 |  | F16 | F17 | F18 | F19 |
++-------------------------------------------------------------------------------------+  +-----------------+  +-----------------------+
+| ~ ` | ! 1 | @ 2 | 3 # | 4 $ | % 5 | ^ 6 | & 7 | * 8 | ( 9 | ) 0 | _ - | + = |delete |  | fn  |home |pg up|  | clr |  =  |  /  |  *  |
++-------------------------------------------------------------------------------------+  +-----------------+  +-----------------------+
+|  tab  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  | { [ | } ] | | \ |  | del | end |pg dn|  |  7  |  8  |  9  |  -  |
++-------------------------------------------------------------------------------------+  +-----------------+  +-----------------------+
+|caps lck|  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  | : ; | " ' |  return  |                       |  4  |  5  |  6  |  +  |
++-------------------------------------------------------------------------------------+        +-----+        +-----------------------+
+|  shift   |  Z  |  X  |  C  |  V  |  B  |  N  |  M  | < , | > .  | ? / |   shift     |        |  ▲  |        |  1  |  2  |  3  |     |
++-------------------------------------------------------------------------------------+  +-----------------+  +-----------------|     |
+| ctrl  |  opt  |  comd   |                                  |  comd  |  opt  | ctrl  |  |  ◀  |  ▼  |  ▶  |  |     0     |  .  |enter|
++-------------------------------------------------------------------------------------+  +-----------------+  +-----------------------+
+
+(same as Macbook +)
+key        code              shift            shift-option         shift-option
+---------  ----------------  ---------------  -------------------  -----------------
+F13        F13
+F14        F14
+F15        F15
+F16        F16
+F17        F17
+F18        F18
+F19        F19
+home       Home
+pg up      Page_Up
+del        Delete
+end        End
+pg dn      Page_Down
+clr        Clear (?)
+= (kp)     KP_Equal (?)
+/ (kp)     KP_Divide
+* (kp)     KP_Multiply
+- (kp)     KP_Subtract
++ (kp)     KP_Add
+. (kp)     KP_Decimal                                                                 KP_Delete
+0 (kp)     KP_0                                                                       KP_Insert
+1 (kp)     KP_1                                                                       KP_End
+2 (kp)     KP_2                                                                       KP_Down
+3 (kp)     KP_3                                                                       KP_Next
+4 (kp)     KP_4                                                                       KP_Left
+5 (kp)     KP_5                                                                       KP_Begin
+6 (kp)     KP_6                                                                       KP_Right
+7 (kp)     KP_7                                                                       KP_Home
+8 (kp)     KP_8                                                                       KP_Up
+9 (kp)     KP_9                                                                       KP_Page_Up
+enter (kp) KP_Enter
+ctrl (rt)  Control_R
+
+PC 101/2 keyboard:
+
++-----+  +-----------------------+  +-----------------------+  +-----------------------+  +-----------------+
+| esc |  | F1  | F2  | F3  | F4  |  | F5  | F6  | F7  | F8  |  | F9  | F10 | F11 | F12 |  |PrtSc|ScrLk|Pause|
++-----+  +-----------------------+  +-----------------------+  +-----------------------+  +-----------------+
++--------------------------------------------------------------------------------------+  +-----------------+  +-----------------------+
+| ~ ` | ! 1 | @ 2 | # 3 | $ 4 | % 5 | ^ 6 | & 7 | * 8 | ( 9 | ) 0 | _ - | + = | bckspc |  | ins |home |pg up|  |nm lk|  /  |  *  |  -  |
++--------------------------------------------------------------------------------------+  +-----------------+  +-----------------------+
+|  tab  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  | { [ | } ] | |  \ |  | del | end |pg dn|  |  7  |  8  |  9  |     |
++--------------------------------------------------------------------------------------+  +-----------------+  +-----------------|  +  |
+|   caps  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  | : ; | " ' |  enter   |                       |  4  |  5  |  6  |     |
++--------------------------------------------------------------------------------------+        +-----+        +-----------------------+
+|   shift   |  Z  |  X  |  C  |  V  |  B  |  N  |  M  | < , | > . | ? / |   shift      |        |  ▲  |        |  1  |  2  |  3  |     |
++--------------------------------------------------------------------------------------+  +-----------------+  +-----------------|enter|
+| ctrl  | win |  alt  |                                          |  alt  | win | ctrl  |  |  ◀  |  ▼  |  ▶  |  |     0     |  .  |     |
++--------------------------------------------------------------------------------------+  +-----------------+  +-----------------------+additional
+
+NOTE: unlike mac, alt does not produce additional keycodes
+
+key        code              shift            num-lock off (kp only)
+---------  ----------------  ---------------  ----------------------
+PrtScr     Print             Sys_Req
+ScrLk      Scroll_Lock       [DO NOTE USE - ONLY SHOWS RELEASE]
+Pause      Pause
+ins        Insert
+home       Home
+pg up      Page_Up
+del        Delete
+end        End
+pg dn      Page_Down
+nm lk      Num_Lock          [NOT RECOMMENDED]
+win        Meta_L
+alt        Alt_L
+alt        Alt_R
+win (rt)   Meta_R
+. (kp)     KP_Decimal                         KP_Delete
+0 (kp)     KP_0                               KP_Insert
+1 (kp)     KP_1                               KP_End
+2 (kp)     KP_2                               KP_Down
+3 (kp)     KP_3                               KP_Next
+4 (kp)     KP_4                               KP_Left
+5 (kp)     KP_5                               KP_Begin
+6 (kp)     KP_6                               KP_Right
+7 (kp)     KP_7                               KP_Home
+8 (kp)     KP_8                               KP_Up
+9 (kp)     KP_9                               KP_Page_Up
+
+VT keyboard:
+
++-----------------------------+  +-----------------------------+  +-----------------------+  +-----------------+  +-----------------------+
+| F1  | F2  | F3  | F4  | F5  |  | F6  | F7  | F8  | F9  | F10 |  | F11 | F12 | F13 | F14 |  |help |    do     |  | F17 | F18 | F19 | F20 |
++-----------------------------+  +-----------------------------+  +-----------------------+  +-----------------+  +-----------------------+
+   +--------------------------------------------------------------------------------------+  +-----------------+  +-----------------------+
+   | ~ ` | ! 1 | @ 2 | # 3 | $ 4 | % 5 | ^ 6 | & 7 | * 8 | ( 9 | ) 0 | _ - | + = | delete |  |find | ins |remov|  | PF1 | PF2 | PF3 | PF4 |
+   +--------------------------------------------------------------------------------------+  +-----------------+  +-----------------------+
+   |  tab  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  | { [ | } ] |return|  | sel |prev |next |  |  7  |  8  |  9  |  -  |
++------------------------------------------------------------------------------------+    |  +-----------------+  +-----------------------+
+|ctrl |capslk|  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  | : ; | " ' | | \ |    |        |  ▲  |        |  4  |  5  |  6  |  ,  |
++-----------------------------------------------------------------------------------------+  +-----------------+  +-----------------------+
+ | shift  | > < |  Z  |  X  |  C  |  V  |  B  |  N  |  M  | < , | > . | ? / |  shift  |      |  ◀  |  ▼  |  ▶  |  |  1  |  2  |  3  |enter|
+ +------------------------------------------------------------------------------------+      +-----------------+  +-----------------|     |
+       |compose|  alt  |                                    |  alt  |compose|                                     |     0     |  .  |     |
+       +--------------------------------------------------------------------+                                     +-----------------------+
+
+key        code              shift            alt                  shift-alt
+---------  ----------------  ---------------  -------------------  -----------------
+F13        F13 (?)
+F14        F14 (?)
+help       F16 (?)
+do         F17 (?)
+F17        F17 (?)
+F18        F18 (?)
+F19        F19 (?)
+F20        F20 (?)
+find       (?)
+remov      (?)
+sel        (?)
+prev       Prior (?)
+next       Next (?)
+PF1        KP_PF1 (?)
+PF2        KP_PF2 (?)
+PF3        KP_PF3 (?)
+PF4        KP_PF4 (?)
+, (kp)     KP_Separator (?)
+compose    _L (?)
+alt        Alt_L
+alt        Alt_R
+compose    _L (?)
+
+
+
+
+Proposal for universal:
+
+ - control = CTRL
+ - shift-control = C=
+ - control-alt / control-option for a very few special control sequences:
+   - option-\ -> CTRL-£ (only needed for mac since shift-control-` won't work)
+   - control-alt-] -> CTRL-: (cursor-right)
+   - option-] -> CTRL-:
+   - control-alt-6 -> CTRL-Up-Arrow (pc only)
+   - option-6 -> CTRL-Up-Arrow (mac only)
+   - control-alt-h -> disable up/low (CTRL-H for some, CTRL-K for others)
+   - option-h -> disable up/low (mac only)
+   - control-alt-i -> enable up/low (CTRL-I for some, CTRL-L for others)
+   - option-i -> enable up/low (mac only)
+- shift-control-alt - extra keys for PC
+   - KP_0 -> PET/PETB/CBM2/128 -- s-c-a-, / s-c-a-0
+   - KP_1 -> PET/PETB/CBM2/128 -- s-c-a-j
+   - KP_2 -> PET/PETB/CBM2/128 -- s-c-a-k
+   - KP_3 -> PET/PETB/CBM2/128 -- s-c-a-l
+   - KP_4 -> PET/PETB/CBM2/128 -- s-c-a-u
+   - KP_5 -> PET/PETB/CBM2/128 -- s-c-a-i
+   - KP_6 -> PET/PETB/CBM2/128 -- s-c-a-o
+   - KP_7 -> PET/PETB/CBM2/128 -- s-c-a-7
+   - KP_8 -> PET/PETB/CBM2/128 -- s-c-a-8
+   - KP_9 -> PET/PETB/CBM2/128 -- s-c-a-9
+   - KP_. -> PET/PETB/CBM2/128 -- s-c-a-.
+   - KP_+ -> PET/CBM2/128 -- s-c-a-p, s-c-a-=
+   - KP_- -> PET/CBM2/128 -- s-c-a--
+   - KP_* -> PET/CBM2 -- s-c-a-;
+   - KP-/ -> PET/CBM2 -- s-c-a-/
+   - KP-= -> PET -- s-c-a-\
+   - KP_Enter -> CBM2/128 -- s-c-a-return
+   - KP_? -> CBM2 -- s-c-a-m
+   - KP_CE -> CBM2 -- s-c-a-[
+   - KP_00 -> CBM2 -- s-c-a-]
+   - OFF/RVS -> PET/PETB/CBM2 -- c-a-v
+   - ESC -> PETB/CBM2/128/Plus4/C16 -- c-a-[
+   - HELP -> 128/Plus4/C16 -- ctrl-F7
+   - TAB -> PETB/CBM2/128 -- TAB
+   - REPEAT -> PETB -- c-a-r
+   - NORM/GRAPH -> CBM2 -- c-a-g
+   - ALT -> 128 -- Alt_R (might not work)
+   - CAPS_LOCK -> 128 -- (if doable, caps-lock, ignore shift-lock?)
+   - LINE_FEED -> 128 -- c-a-m
+   - 40/80_DISPLAY -> 128 -- c-a-4 (if doable)
+   - NO_SCROLL -> 128 -- c-a-z
+   - shift-Meta_L -> Toggle UPPER/lower
+- shift-option -> extra keys for mac
+   - KP_0 -> PET/PETB/CBM2/128 -- o-H, o-0
+   - KP_1 -> PET/PETB/CBM2/128 -- o-Z
+   - KP_2 -> PET/PETB/CBM2/128 -- o-X
+   - KP_3 -> PET/PETB/CBM2/128 -- o-C
+   - KP_4 -> PET/PETB/CBM2/128 -- o-A
+   - KP_5 -> PET/PETB/CBM2/128 -- o-S
+   - KP_6 -> PET/PETB/CBM2/128 -- o-D
+   - KP_7 -> PET/PETB/CBM2/128 -- o-Q
+   - KP_8 -> PET/PETB/CBM2/128 -- o-W
+   - KP_9 -> PET/PETB/CBM2/128 -- o-E
+   - KP_. -> PET/PETB/CBM2/128 -- o->
+   - KP_+ -> PET/CBM2/128 -- o-+, o-P
+   - KP_- -> PET/CBM2/128 -- o-_
+   - KP_* -> PET/CBM2 -- o-*, o-:
+   - KP-/ -> PET/CBM2 -- o-?
+   - KP-= -> PET -- o-|
+   - KP_Enter -> c-return
+   - KP_? -> CBM2 -- o-M
+   - KP_CE -> CBM2 -- o-{
+   - KP_00 -> CBM2 -- o-}
+   - OFF/RVS -> PET/PETB/CBM2 -- o-v
+   - ESC -> PETB/CBM2/128/Plus4/C16 -- option-[
+   - HELP -> 128/Plus4/C16 -- control-fn-F7
+   - TAB -> PETB/CBM2/128 -- TAB
+   - REPEAT -> PETB -- o-r
+   - NORM/GRAPH -> CBM2 -- o-g
+   - ALT -> 128 -- Ctrl_R (mac), Alt_R (macbook -- likely won't work)
+   - CAPS_LOCK -> 128 -- (if doable, caps-lock, ignore shift-lock?)
+   - LINE_FEED -> 128 -- o-m
+   - 40/80_DISPLAY -> 128 -- o-4
+   - NO_SCROLL -> 128 -- o-z
+   - shift-Meta-L -> Toggle UPPER/lower
+
+

@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+:root {
+  --c64-case-color: #b2ad9d;
+  --c64-key-color: #382a16;
+  --c64-key-text: white;
+  --c64-key-border: black;
+  --c64-fn-key-color: #857568;
+
+  --c64-black: black;
+  --c64-white: white;
+  --c64-red: #B0596F;
+  --c64-cyan: #A0EFDB;
+  --c64-purple: #AF60E2;
+  --c64-green: #83D45D;
+  --c64-blue: #4555D6;
+  --c64-yellow: #FFFF7D;
+  --c64-orange: #B87B42;
+  --c64-brown: #836600;
+  --c64-pink: #E495A9;
+  --c64-dkgray: #777777;
+  --c64-medgray: #A5A5A5;
+  --c64-ltgreen: #CDFFAC;
+  --c64-ltblue: #8E9AFF;
+  --c64-ltgray: #D5D5D5;
+}
+
+/* Commodore 64 Specific */
+.c64 #show-key {
+  background: var(--c64-blue);
+  color: var(--c64-ltblue);
+  font-family: cbm64, monospace;
+  border: solid 8px var(--c64-ltblue);
+  transform: scale(1,1.1);
+}
+.c64 #show-key.s-black { color: var(--c64-black); }
+.c64 #show-key.s-white { color: var(--c64-white); }
+.c64 #show-key.s-red { color: var(--c64-red); }
+.c64 #show-key.s-cyan { color: var(--c64-cyan); }
+.c64 #show-key.s-purple { color: var(--c64-purple); }
+.c64 #show-key.s-green { color: var(--c64-green); }
+.c64 #show-key.s-blue { color: var(--c64-blue); }
+.c64 #show-key.s-yellow { color: var(--c64-yellow); }
+.c64 #show-key.s-orange { color: var(--c64-orange); }
+.c64 #show-key.s-brown { color: var(--c64-brown); }
+.c64 #show-key.s-pink { color: var(--c64-pink); }
+.c64 #show-key.s-dkgray { color: var(--c64-dkgray); }
+.c64 #show-key.s-medgray { color: var(--c64-medgray); }
+.c64 #show-key.s-ltgreen { color: var(--c64-ltgreen); }
+.c64 #show-key.s-ltblue { color: var(--c64-ltblue); }
+.c64 #show-key.s-ltgray { color: var(--c64-ltgray); }
+.c64 #show-key.s-rev { background: var(--c64-ltblue); color: var(--c64-blue); }
+
+.keyboard.c64 {
+  background: var(--c64-case-color);
+  padding-left: 4.5%;
+  width: 80vw;
+}
+.keyboard.c64 key {
+  background: var(--c64-key-color);
+  color: var(--c64-key-text);
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 5px;
+  width: 5%;
+  font-size: 12pt;
+  align-content: start;
+  line-height: 200%;
+  border-color: var(--c64-key-border);
+}
+.keyboard.c64 key i, .keyboard.c64 key b, .keyboard.c64 key em {
+  align-content: center;
+  line-height: 100%;
+  font-size: 9pt;
+}
+.keyboard.c64 key i {
+  top: 1%;
+  height: 25%;
+}
+.keyboard.c64 key b {
+  top: 33%;
+  height: 25%;
+}
+.keyboard.c64 key em {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  height: 40%;
+  padding: 0; margin: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  background-color: rgb(from var(--c64-key-color) calc(r * 0.5) calc(g * 0.5) calc(b * 0.5));
+  font-size: 8pt;
+}
+.keyboard.c64 key em cbm {
+  display: inline-block;
+  font-family: cbm64, monospace;
+  border: solid 1px lightgray;
+  padding: 0;
+  margin: 0 5%;
+  line-height: 90%;
+}
+.keyboard.c64 em cbm:first-child { margin-right: 15%; }
+
+.keyboard.c64 key.nopet {
+  background: #382a16;
+  color: white;
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 5%;
+  font-size: 13pt;
+  align-content: center;
+  line-height: unset;
+}
+.keyboard.c64 key.nopet i {
+  top: 15%;
+  height: unset;
+}
+.keyboard.c64 key.nopet b {
+  top: unset;
+  bottom: 15%;
+  height: unset;
+}
+
+.keyboard.c64 key.ind { margin-left: 2.5%; }
+
+.keyboard.c64 key.fn {
+  margin-left: 2%;
+  background: var(--c64-fn-key-color);
+  width: 7.5%;
+  aspect-ratio: 1.5;
+}
+.keyboard.c64 key.fn em {
+  background: rgb(from var(--c64-fn-key-color) calc(r * 0.75) calc(g * 0.75) calc(b * 0.75));
+}
+.keyboard.c64 key.fn.ind {
+  margin-left: 3.5%;
+}
+
+.keyboard.c64 key.smtx {
+  font-size: 9pt;
+  align-content: center;
+  line-height: 100%;
+}
+.keyboard.c64 key.wide { align-content: center; line-height: 100%; }
+.keyboard.c64 key.wide.p125 {
+  width: 6.25%;
+  aspect-ratio: 1.25;
+}
+.keyboard.c64 key.wide.p150 {
+  width: 8.1%;
+  aspect-ratio: 1.62;
+}
+.keyboard.c64 key.wide.p175 {
+  width: 8.9%;
+  aspect-ratio: 1.78;
+}
+.keyboard.c64 key.wide.p225 {
+  width: 11.25%;
+  aspect-ratio: 2.25;
+}
+.keyboard.c64 key.space {
+  margin-left: 15%;
+  width: 47%;
+  aspect-ratio: 9.4;
+}
+.keyboard.c64 key.cbm {
+  background: no-repeat center/60% url("/assets/cbm-logo.png") var(--c64-key-color) !important;
+}
+.keyboard.c64 key.crsr {
+  font-size: 9pt;
+  align-content: center;
+  line-height: 100%;
+}
+.keyboard.c64 key.crsr i { top: 7%; height: unset; }
+.keyboard.c64 key.crsr b { top: unset; bottom: 7%; height: unset; }
+.keyboard.c64 key.crsr.k-right b { font-size: 11pt; }
+
+.keyboard.c64 .overlay.o-t3 {
+  height: 30%;
+}
+.keyboard.c64 .overlay.o-m3 {
+  top: 23%;
+  height: 30%;
+}
+.keyboard.c64 .overlay.o-tm3 {
+  height: 65%;
+}
+.keyboard.c64 .overlay.o-bm3 {
+  top: unset;
+  bottom: -5px;
+  height: 65%;
+}
+.keyboard.c64 .overlay.o-b3, .keyboard.c64 .overlay.o-b3l, .keyboard.c64 .overlay.o-b3r {
+  top: unset;
+  bottom: -5px;
+  height: 35%;
+}
+.keyboard.c64 .overlay.o-b3l, .keyboard.c64 .overlay.o-b3r {
+  width: 50%;
+}
+.keyboard.c64 .overlay.o-b3r {
+  left: unset;
+  right: -5px;
+}
+
+body.zoomin {
+  transform: scale(1) translate(0%, 0%);
+  transition: linear 0.75s transform;
+}
+body.dozoom-g {
+  transform: scale(2.5) translate(9%,21%);
+}
+body.dozoom-gbp {
+  transform: scale(2.5) translate(-23%,34%);
+}
+
+#keymap .rowbar {
+  height: 5.2%;
+  top: 16.6%;
+}
+#keymap .colbar {
+  width: 8.9%;
+  left: 13.5%;
+}
+#keymap.r-0 .rowbar { top: 16.6% }
+#keymap.r-1 .rowbar { top: 26.5% }
+#keymap.r-2 .rowbar { top: 36.9% }
+#keymap.r-3 .rowbar { top: 47.0% }
+#keymap.r-4 .rowbar { top: 57.2% }
+#keymap.r-5 .rowbar { top: 67.7% }
+#keymap.r-6 .rowbar { top: 78.0% }
+#keymap.r-7 .rowbar { top: 88.2% }
+#keymap.c-0 .colbar { left: 13.5% }
+#keymap.c-1 .colbar { left: 24.2% }
+#keymap.c-2 .colbar { left: 34.9% }
+#keymap.c-3 .colbar { left: 45.6% }
+#keymap.c-4 .colbar { left: 56.3% }
+#keymap.c-5 .colbar { left: 67.0% }
+#keymap.c-6 .colbar { left: 77.7% }
+#keymap.c-7 .colbar { left: 88.4% }

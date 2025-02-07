@@ -1,0 +1,91 @@
+:root {
+  --plus4-case-color: #464644;
+  --plus4-fn-key-color: #979890;
+
+  --plus4-black: black;
+  --plus4-white: white;
+  --plus4-red: #913b3e;
+  --plus4-cyan: #7ed4d1;
+  --plus4-purple: #b4607b;
+  --plus4-green: #13674c;
+  --plus4-blue: #6a6cc6;
+  --plus4-yellow: #FFFFb1;
+  --plus4-orange: #b86949;
+  --plus4-brown: #6e3e00;
+  --plus4-yellowgreen: #69a765;
+  --plus4-pink: #ffaab1;
+  --plus4-bluegreen: #52a690;
+  --plus4-ltblue: #8ac5ff;
+  --plus4-dkblue: #692867;
+  --plus4-ltgreen: #60a771;
+  --plus4-rev: white;
+}
+
+.keyboard.c128.plus4 {
+  background: var(--plus4-case-color);
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 75vw;
+  padding-left: 9%;
+}
+
+.keyboard.c128.plus4 key {
+  width: 5%;
+}
+.keyboard.c128.plus4 key em.lg { font-size: 9pt; }
+
+.keyboard.c128.plus4 key.fn {
+  background: var(--plus4-fn-key-color);
+  width: 8.5%;
+  margin-right: 2.1%;
+  height: 1vw;
+  border-radius: 0;
+}
+.keyboard.c128.plus4 key.fn:first-child { margin-left: 5.7%; }
+
+.keyboard.c128.plus4 key.space {
+  margin-left: 19.6%;
+  width: 50.2%;
+  margin-right: 8.5%;
+}
+.keyboard.c128.plus4 key.arrows {
+  background: transparent;
+  border: none;
+  vertical-align: top;
+  margin-top: -4.2vw;
+  width: 10.5%;
+  color: #979890;
+}
+
+.keyboard.c128.plus4 key.wide.p150 {
+  width: 7.8%;
+  aspect-ratio: 1.56;
+}
+.keyboard.c128.plus4 key.wide.p200 {
+  width: 10.75%;
+}
+
+.c128.plus4 #show-key {
+  background: var(--plus4-white);
+  color: var(--plus4-black);
+  border: solid 8px var(--plus4-pink);
+}
+.c128.plus4 #show-key.s-black { color: var(--plus4-black); }
+.c128.plus4 #show-key.s-white { color: var(--plus4-white); }
+.c128.plus4 #show-key.s-red { color: var(--plus4-red); }
+.c128.plus4 #show-key.s-cyan { color: var(--plus4-cyan); }
+.c128.plus4 #show-key.s-purple { color: var(--plus4-purple); }
+.c128.plus4 #show-key.s-green { color: var(--plus4-green); }
+.c128.plus4 #show-key.s-blue { color: var(--plus4-blue); }
+.c128.plus4 #show-key.s-yellow { color: var(--plus4-yellow); }
+.c128.plus4 #show-key.s-orange { color: var(--plus4-orange); }
+.c128.plus4 #show-key.s-brown { color: var(--plus4-brown); }
+.c128.plus4 #show-key.s-yellowgreen { color: var(--plus4-yellowgreen); }
+.c128.plus4 #show-key.s-pink { color: var(--plus4-pink); }
+.c128.plus4 #show-key.s-bluegreen { color: var(--plus4-bluegreen); }
+.c128.plus4 #show-key.s-ltblue { color: var(--plus4-ltblue); }
+.c128.plus4 #show-key.s-dkblue { color: var(--plus4-dkblue); }
+.c128.plus4 #show-key.s-ltgreen { color: var(--plus4-ltgreen); }
+.c128.plus4 #show-key.s-rev { background: var(--plus4-black); color: var(--plus4-white); }

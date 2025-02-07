@@ -1,0 +1,39 @@
+.keyboard.pet.petb key {
+  width: 4.8%;
+  align-content: center;
+  line-height: 100%;
+}
+.keyboard.pet.petb key.wd150 {
+  width: 7.25%;
+}
+.keyboard.pet.petb key.wd200 {
+  width: 9.7%;
+}
+.keyboard.pet.petb key.ind {
+  margin-left: 1%;
+}
+.keyboard.pet.petb key.gap75 {
+  margin-right: 3%;
+}
+.keyboard.pet.petb key.gap125 {
+  margin-right: 5.6%;
+}
+.keyboard.pet.petb key.gap100 {
+  margin-right: 4.1%;
+}
+
+.keyboard.pet.petb key i {
+  top: 6px;
+}
+.keyboard.pet.petb key b {
+  bottom: 6px;
+}
+.keyboard.pet.petb key.smtx {
+  font-size: 5pt;
+}
+
+.keyboard.pet.petb key.space {
+  margin-left: 16%;
+  width: 42.7%;
+  aspect-ratio: 8.9;
+}

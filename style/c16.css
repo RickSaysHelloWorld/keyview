@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+:root {
+  --c16-case-color: #545053;
+  --c16-key-color: #dbdcde;
+  --c16-key-text: black;
+  --c16-fn-key-color: #b8babc;
+
+  --c16-black: black;
+  --c16-white: white;
+  --c16-red: #913b3e;
+  --c16-cyan: #7ed4d1;
+  --c16-purple: #b4607b;
+  --c16-green: #13674c;
+  --c16-blue: #6a6cc6;
+  --c16-yellow: #FFFFb1;
+  --c16-orange: #b86949;
+  --c16-brown: #6e3e00;
+  --c16-yellowgreen: #69a765;
+  --c16-pink: #ffaab1;
+  --c16-bluegreen: #52a690;
+  --c16-ltblue: #8ac5ff;
+  --c16-dkblue: #692867;
+  --c16-ltgreen: #60a771;
+}
+
+.keyboard.c64.c16 {
+  background: var(--c16-case-color);
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.keyboard.c64.c16 key {
+  color: var(--c16-key-text);
+  background: var(--c16-key-color);
+  letter-spacing: 0.1rem;
+}
+.keyboard.c64.c16 key em {
+  background: rgb(from var(--c16-key-color) calc(r * 0.75) calc(g * 0.75) calc(b * 0.75));
+  letter-spacing: normal;
+  height: 40%;
+  font-size: 7pt;
+}
+.keyboard.c64.c16 key em ctrl, .keyboard.c64.c16 key em cc {
+  display: block;
+}
+.keyboard.c64.c16 key em cbm {
+  border-color: #404040;
+}
+.keyboard.c64.c16 key em.lg { font-size: 9pt; }
+
+.keyboard.c64.c16 key.fn {
+  background: var(--c16-fn-key-color);
+}
+.keyboard.c64.c16 key.fn em {
+  background: rgb(from var(--c16-fn-key-color) calc(r * 0.75) calc(g * 0.75) calc(b * 0.75));
+}
+.keyboard.c64 key.cbm {
+  background: no-repeat center/60% url("/assets/cbm-logo-dark.png") var(--c16-key-color) !important;
+}
+
+.c64.c16 #show-key {
+  background: var(--c16-white);
+  color: var(--c16-black);
+  border: solid 8px var(--c16-pink);
+}
+.c64.c16 #show-key.s-black { color: var(--c16-black); }
+.c64.c16 #show-key.s-white { color: var(--c16-white); }
+.c64.c16 #show-key.s-red { color: var(--c16-red); }
+.c64.c16 #show-key.s-cyan { color: var(--c16-cyan); }
+.c64.c16 #show-key.s-purple { color: var(--c16-purple); }
+.c64.c16 #show-key.s-green { color: var(--c16-green); }
+.c64.c16 #show-key.s-blue { color: var(--c16-blue); }
+.c64.c16 #show-key.s-yellow { color: var(--c16-yellow); }
+.c64.c16 #show-key.s-orange { color: var(--c16-orange); }
+.c64.c16 #show-key.s-brown { color: var(--c16-brown); }
+.c64.c16 #show-key.s-yellowgreen { color: var(--c16-yellowgreen); }
+.c64.c16 #show-key.s-pink { color: var(--c16-pink); }
+.c64.c16 #show-key.s-bluegreen { color: var(--c16-bluegreen); }
+.c64.c16 #show-key.s-ltblue { color: var(--c16-ltblue); }
+.c64.c16 #show-key.s-dkblue { color: var(--c16-dkblue); }
+.c64.c16 #show-key.s-ltgreen { color: var(--c16-ltgreen); }
+.c64.c16 #show-key.s-rev { background: var(--c16-black); color: var(--c16-white); }

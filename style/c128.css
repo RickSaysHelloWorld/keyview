@@ -1,0 +1,282 @@
+@font-face { font-family: cbm128;    src: url(../fonts/PetMe128.ttf); }
+@font-face { font-family: cbm128-80; src: url(../fonts/PetMe1282Y.ttf); }
+
+:root {
+  --c128-case-color: #e3d6d2;
+  --c128-key-color: #e3d6d2;
+  --c128-key-border: black;
+  --c128-key-text: black;
+  --c128-fn-key-color: #c9b9ba;
+
+  --c128-black: black;
+  --c128-white: white;
+  --c128-red: #BD516C;
+  --c128-cyan: #91F5DC;
+  --c128-purple: #B855F6;
+  --c128-green: #77DC46;
+  --c128-blue: #3E51F0;
+  --c128-yellow: #FFFF5C;
+  --c128-orange: #C4792D;
+  --c128-brown: #8A6700;
+  --c128-pink: #F08FA6;
+  --c128-dkgray: #777777;
+  --c128-medgray: #A5A5A5;
+  --c128-ltgreen: #C3FF99;
+  --c128-ltblue: #8898FF;
+  --c128-ltgray: #D5D5D5;
+
+  --c128-c80-black: black;
+  --c128-c80-white: white;
+  --c128-c80-red: #AA0000;
+  --c128-c80-cyan: #55FFFF;
+  --c128-c80-purple: #FF55FF;
+  --c128-c80-green: #00AA00;
+  --c128-c80-blue: #0000AA;
+  --c128-c80-yellow: #FFFF55;
+  --c128-c80-orange: #AA00AA;
+  --c128-c80-brown: #AA5500;
+  --c128-c80-pink: #FF5555;
+  --c128-c80-dkgray: #00AAAA;
+  --c128-c80-medgray: #555555;
+  --c128-c80-ltgreen: #55FF55;
+  --c128-c80-ltblue: #5555FF;
+  --c128-c80-ltgray: #AAAAAA;
+  --c128-c80-rev: black;
+}
+
+/* Commodore 128 Specific */
+.c128 #show-key {
+  background: var(--c128-dkgray);
+  color: var(--c128-ltgreen);
+  font-family: cbm128, monospace;
+  border: solid 8px var(--c128-ltgreen);
+  transform: scale(1,1.1);
+}
+.c128 #show-key.s-black { color: var(--c128-black); }
+.c128 #show-key.s-white { color: var(--c128-white); }
+.c128 #show-key.s-red { color: var(--c128-red); }
+.c128 #show-key.s-cyan { color: var(--c128-cyan); }
+.c128 #show-key.s-purple { color: var(--c128-purple); }
+.c128 #show-key.s-green { color: var(--c128-green); }
+.c128 #show-key.s-blue { color: var(--c128-blue); }
+.c128 #show-key.s-yellow { color: var(--c128-yellow); }
+.c128 #show-key.s-orange { color: var(--c128-orange); }
+.c128 #show-key.s-brown { color: var(--c128-brown); }
+.c128 #show-key.s-pink { color: var(--c128-pink); }
+.c128 #show-key.s-dkgray { color: var(--c128-dkgray); }
+.c128 #show-key.s-medgray { color: var(--c128-medgray); }
+.c128 #show-key.s-ltgreen { color: var(--c128-ltgreen); }
+.c128 #show-key.s-ltblue { color: var(--c128-ltblue); }
+.c128 #show-key.s-ltgray { color: var(--c128-ltgray); }
+.c128 #show-key.s-rev { background: var(--c128-ltgreen); color: var(--c128-dkgray); }
+
+.c128 #show-key.c80 {
+  background: var(--c128-c80-black);
+  color: var(--c128-c80-cyan);
+  font-family: cbm128-80, monospace;
+  border: solid 8px var(--c128-c80-black);
+  transform: scale(1,1.127);
+}
+.c128 #show-key.c80.s-black { color: var(--c128-c80-black); }
+.c128 #show-key.c80.s-white { color: var(--c128-c80-white); }
+.c128 #show-key.c80.s-red { color: var(--c128-c80-red); }
+.c128 #show-key.c80.s-cyan { color: var(--c128-c80-cyan); }
+.c128 #show-key.c80.s-purple { color: var(--c128-c80-purple); }
+.c128 #show-key.c80.s-green { color: var(--c128-c80-green); }
+.c128 #show-key.c80.s-blue { color: var(--c128-c80-blue); }
+.c128 #show-key.c80.s-yellow { color: var(--c128-c80-yellow); }
+.c128 #show-key.c80.s-orange { color: var(--c128-c80-orange); } /* dark purple */
+.c128 #show-key.c80.s-brown { color: var(--c128-c80-brown); }
+.c128 #show-key.c80.s-pink { color: var(--c128-c80-pink); } /* light red */
+.c128 #show-key.c80.s-dkgray { color: var(--c128-c80-dkgray); } /* dark cyan */
+.c128 #show-key.c80.s-medgray { color: var(--c128-c80-medgray); } /* dark gray */
+.c128 #show-key.c80.s-ltgreen { color: var(--c128-c80-ltgreen); }
+.c128 #show-key.c80.s-ltblue { color: var(--c128-c80-ltblue); }
+.c128 #show-key.c80.s-ltgray { color: var(--c128-c80-ltgray); }
+.c128 #show-key.c80.s-rev { background: var(--c128-c80-cyan); color: var(--c128-c80-black); }
+
+.keyboard.c128 {
+  background: var(--c128-case-color);
+  padding-left: 2%;
+  width: 78vw;
+  font-family: "Funnel Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.keyboard.c128 key {
+  background: var(--c128-key-color);
+  border-color: var(--c128-key-border);
+  color: black;
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 5px;
+  width: 4.15%;
+  font-size: 12pt;
+  align-content: start;
+  line-height: 100%;
+  text-align: left;
+  padding: 0.2%;
+}
+.keyboard.c128 key em, .keyboard.c128 key b, .keyboard.c128 key i {
+  position: absolute;
+  display: block;
+  left: 0;
+  font-size: 10pt;
+  line-height: 90%;
+  height: 25%;
+  padding: 0; margin: 0;
+}
+.keyboard.c128 key i {
+  top: 1%;
+}
+.keyboard.c128 key b {
+  top: 28%;
+}
+.keyboard.c128 key i.ind, .keyboard.c128 key b.ind {
+  left: 4%; width: 95%;
+}
+.keyboard.c128 key em {
+  align-content: center;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  height: 40%;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  background-color: rgb(from var(--c128-key-color) calc(r * 0.75) calc(g * 0.75) calc(b * 0.75));
+  font-size: 6pt;
+  line-height: 90%;
+}
+.keyboard.c128 key em cbm {
+  display: inline-block;
+  font-family: cbm128, monospace;
+  font-size: 8pt;
+  border: solid 1px #404040;
+  padding: 0;
+  margin: 0 5%;
+  line-height: 90%;
+  color: #404040
+}
+.keyboard.c128 em cbm:first-child { margin-right: 15%; }
+.keyboard.c128 em ctrl, .keyboard.c128 em cc {
+  display: block;
+}
+
+.keyboard.c128 key.fn {
+  background: var(--c128-fn-key-color);
+  margin-bottom: 1.2vw;
+  font-size: 7pt;
+}
+.keyboard.c128 key.fn em {
+  background-color: rgb(from var(--c128-fn-key-color) calc(r * 0.75) calc(g * 0.75) calc(b * 0.75));
+  font-size: 9pt;
+  text-align: left;
+}
+.keyboard.c128 key.fn.arw {
+  font-size: 15pt;
+  text-align: center;
+  align-content: center;
+}
+.keyboard.c128 key.fn.cfn {
+  font-size: 11pt;
+}
+
+.keyboard.c128 key.gap1 {
+  margin-right: 3%;
+}
+.keyboard.c128 key.gap2 {
+  margin-right: 9.53%;
+}
+
+.keyboard.c128 key.tall {
+  margin-top: -3.7vw;
+  vertical-align: top;
+  height: 7vw;
+}
+
+.keyboard.c128 key.smtx, .keyboard.c128 key.smtx i, .keyboard.c128 key.smtx b {
+  font-size: 9pt;
+  line-height: 100%;
+}
+.keyboard.c128 key.wide { line-height: 100%; }
+.keyboard.c128 key.wide.p150 {
+  width: 6.52%;
+  aspect-ratio: 1.57;
+}
+.keyboard.c128 key.wide.p200 {
+  width: 8.92%;
+  aspect-ratio: 2.15;
+}
+.keybaord.c128 key.wide.p200.k-kp0 { width: 9.1% }
+.keyboard.c128 key.space {
+  margin-left: 16.9%;
+  width: 43%;
+  aspect-ratio: 10.1;
+}
+.keyboard.c128 key.cbm {
+  background: no-repeat left top/40% url("/assets/cbm-logo-dark.png") var(--c128-key-color) !important;
+}
+.keyboard.c128 key.crsr {
+  font-size: 9pt;
+  align-content: center;
+  line-height: 100%;
+  text-align: center;
+}
+.keyboard.c128 key.crsr i { top: 10%; height: unset; }
+.keyboard.c128 key.crsr b { top: unset; bottom: 10%; height: unset; }
+
+.keyboard.c128 .overlay.o-t3 {
+  height: 30%;
+}
+.keyboard.c128 .overlay.o-m3 {
+  top: 23%;
+  height: 30%;
+}
+.keyboard.c128 .overlay.o-tm3 {
+  height: 65%;
+}
+.keyboard.c128 .overlay.o-bm3 {
+  top: unset;
+  bottom: -5px;
+  height: 65%;
+}
+.keyboard.c128 .overlay.o-b3, .keyboard.c128 .overlay.o-b3l, .keyboard.c128 .overlay.o-b3r {
+  top: unset;
+  bottom: -5px;
+  height: 35%;
+}
+.keyboard.c128 .overlay.o-b3l, .keyboard.c128 .overlay.o-b3r {
+  width: 50%;
+}
+.keyboard.c128 .overlay.o-b3r {
+  left: unset;
+  right: -5px;
+}
+
+#keymap .rowbar {
+  height: 5.2%;
+  top: 16.6%;
+}
+#keymap .colbar {
+  width: 8.9%;
+  left: 13.5%;
+}
+#keymap.r-0 .rowbar { top: 16.6% }
+#keymap.r-1 .rowbar { top: 26.5% }
+#keymap.r-2 .rowbar { top: 36.9% }
+#keymap.r-3 .rowbar { top: 47.0% }
+#keymap.r-4 .rowbar { top: 57.2% }
+#keymap.r-5 .rowbar { top: 67.7% }
+#keymap.r-6 .rowbar { top: 78.0% }
+#keymap.r-7 .rowbar { top: 88.2% }
+#keymap.c-0 .colbar { left: 13.5% }
+#keymap.c-1 .colbar { left: 24.2% }
+#keymap.c-2 .colbar { left: 34.9% }
+#keymap.c-3 .colbar { left: 45.6% }
+#keymap.c-4 .colbar { left: 56.3% }
+#keymap.c-5 .colbar { left: 67.0% }
+#keymap.c-6 .colbar { left: 77.7% }
+#keymap.c-7 .colbar { left: 88.4% }

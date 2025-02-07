@@ -1,0 +1,135 @@
+:root {
+  --petgr-chick-case-color: #bab9c0;
+  --petgr-chick-surround-color: black;
+  --petgr-chick-key-color: #9fa4ab;
+  --petgr-chick-key-text: black;
+  --petgr-chick-key-edge: #e0dcd8;
+  --petgr-chick-sym-key-color: #6b8e9c;
+  --petgr-chick-red-key-color: #830909;
+  --petgr-chick-blue-key-color: #024d7f;
+
+  --petgr-back: black;
+  --petgr-fore: #18e500;
+}
+
+.petgr-chick #show-key {
+  font-family: cbmPET-40, monospace;
+  background: var(--petgr-back);
+  border-color: var(--petgr-back);
+  color: var(--petgr-fore);
+  transform: scale(1,1.127)
+}
+
+.keyboard.petgr-chick {
+  background: var(--petgr-chick-case-color);
+  width: 68vw;
+}
+
+.keyboard.petgr-chick div.srnd {
+  background: var(--petgr-chick-surround-color);
+  display: inline-block;
+  border: 10px solid black;
+  border-top: none;
+  border-bottom: none;
+  vertical-align: top;
+}
+.keyboard.petgr-chick div.srnd:nth-child(3n-2) { width: 45vw; }
+.keyboard.petgr-chick div.srnd:nth-child(3n-1) { width: 16.5vw; }
+.keyboard.petgr-chick div.srnd.top {
+  border-top: 10px solid var(--petgr-chick-surround-color);
+  border-radius: 6px 6px 0 0;
+}
+.keyboard.petgr-chick div.srnd.bottom {
+  border-bottom: 10px solid var(--petgr-chick-surround-color);
+  border-radius: 0 0 6px 6px;
+}
+.keyboard .gap1 { margin-right: 3vw; }
+
+.keyboard.petgr-chick key {
+  background: var(--petgr-chick-key-color);
+  color: var(--petgr-chick-key-text);
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10pt;
+  width: 3vw;
+  border: solid 6px var(--petgr-chick-key-edge);
+}
+.keyboard.petgr-chick key::after {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: -6px;
+  width: 95%;
+  height: 95%;
+  z-index: 90;
+  border: solid 7px var(--petgr-chick-key-edge);
+  border-radius: 12px;
+}
+.keyboard.petgr-chick key.z-sym { background: var(--petgr-chick-sym-key-color); }
+.keyboard.petgr-chick key.red {
+  color: var(--petgr-chick-key-color);
+  background: var(--petgr-chick-red-key-color);
+}
+.keyboard.petgr-chick key.blu {
+  color: var(--petgr-chick-key-color);
+  background: var(--petgr-chick-blue-key-color);
+}
+
+.keyboard.petgr-chick key.z-act, .keyboard.petgr-chick key.z-trans {
+  font-size: 5.5pt;
+}
+.keyboard.petgr-chick key.z-act i, .keyboard.petgr-chick key.z-act b {
+  font-size: 5.5pt;
+}
+
+.keyboard.petgr-chick key.z-act.crsr i, .keyboard.petgr-chick key.z-act.crsr b {
+  font-size: 8pt;
+}
+.keyboard.petgr-chick key.z-act.crsr i { top: 2px; }
+.keyboard.petgr-chick key.z-act.crsr b { bottom: -4px; }
+.keyboard.petgr-chick key.z-act.crsr.k-right b {
+  font-size: 10pt;
+  bottom: -2px;
+}
+
+.keyboard.petgr-chick key i, .keyboard.petgr-chick key b {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  left: 0;
+  font-size: 10pt;
+  line-height: 100%;
+}
+.keyboard.petgr-chick key i { top: 2px; }
+.keyboard.petgr-chick key b { bottom: 0; }
+
+.keyboard.petgr-chick key.z-act i { top: 7px; }
+.keyboard.petgr-chick key.z-act b { bottom: -2px; }
+
+.keyboard.petgr-chick key i cbm {
+  display: inline-block;
+  font-family: cbmPET-40, monospace;
+  border: solid 1px var(--petgr-chick-key-text);
+  padding: 0;
+  line-height: 90%;
+  font-size: 8pt;
+}
+
+.keyboard.petgr-chick key.k-return {
+  margin-top: -4.07vw;
+  height: 7.08vw;
+  vertical-align: top;
+  line-height: 110%;
+}
+.keyboard.petgr-chick key.k-return:after { height: 98%; }
+
+.keyboard.petgr-chick key.space {
+  width: 7.05vw;
+  aspect-ratio: 2.35;
+  margin: 0;
+  align-content: center;
+}
+.keyboard.petgr-chick key.space:after {
+  width: 98%;
+}
